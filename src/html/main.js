@@ -1,7 +1,7 @@
 import { head } from './layout/head.js';
 import { footer } from './layout/footer.js';
 
-export const render = (data) => {
+export const render = (data,lang) => {
 return `
 <!DOCTYPE html>
 <html lang="${data.countryCode.toLowerCase()}">
@@ -43,13 +43,13 @@ ${head(data)}
 
       <div class="content">
           <h2>Serverless Architecture</h2>
-          <p>${data.lang.desc1_1}&nbsp;${data.lang.desc1_2}</p>
+          <p>${lang.desc1_1}&nbsp;${lang.desc1_2}</p>
           <div class="tech-note">
               <strong>What is Cloudflare Workers?</strong><br>
-              ${data.lang.desc2_1}&nbsp;${data.lang.desc2_2}
+              ${lang.desc2_1}&nbsp;${lang.desc2_2}
           </div>
           <h2 style="margin-top:30px;">Optimized Network Visibility</h2>
-          <p>${data.lang.desc3_1}&nbsp;${data.lang.desc3_2}</p>
+          <p>${lang.desc3_1}&nbsp;${lang.desc3_2}</p>
       </div>
 
       <script>
