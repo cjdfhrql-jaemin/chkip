@@ -18,7 +18,6 @@
 		"nodejs_compat"
 	],
 	"routes": [
-		{ "pattern": "chkip.org", "custom_domain": true },
-		{ "pattern": "www.chkip.org", "custom_domain": true }
+		{ "pattern": "chkip.org", "custom_domain": true }
   	]
 }
