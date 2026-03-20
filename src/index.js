@@ -94,7 +94,7 @@ export default {
       const pageTitle = url.pathname === "/about" ? "About CHKIP.ORG : CHKIP.ORG" : 
                         url.pathname === "/terms" ? "Terms of Service - CHKIP.ORG" : 
                         url.pathname === "/policy" ? "Privacy Policy - CHKIP.ORG" : 
-                        "Serverless IP Checker - CHKIP.ORG";
+                        "IP Checker - CHKIP.ORG";
 
       const pageDesc = "Check your public IP address instantly. See your IPv4 and IPv6 address, location, and connection details with a fast privacy-focused IP checker.";
       const siteUrl = `https://${url.host}`;
