@@ -5,7 +5,8 @@
 	"scripts": {
 		"gen": "node mappings-gen.js",
     	"dev": "npm run gen && wrangler dev --ip 0.0.0.0 --port 8787",
-    	"deploy": "npm run gen && wrangler deploy"
+    	"deploy": "npm run gen && wrangler deploy",
+		"push": "git add . && git commit -m \"$npm_config_message\" && git push origin main"
     },
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.12.4",
