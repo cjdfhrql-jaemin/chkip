@@ -3,11 +3,10 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
-		"start": "wrangler dev",
-		"test": "vitest"
-	},
+		"gen": "node mappings-gen.js",
+    	"dev": "npm run gen && wrangler dev --ip 0.0.0.0 --port 8787",
+    	"deploy": "npm run gen && wrangler deploy"
+    },
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.12.4",
 		"vitest": "~3.2.0",
