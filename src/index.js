@@ -75,6 +75,11 @@ export default {
     const url = new URL(request.url);
     const pathname = url.pathname;
 
+    if (url.hostname.startsWith("www")) {
+      url.hostname = "chkip.org";
+      return Response.redirect(url.toString(), 301);
+    }
+
     // 1. 시스템 파일 처리
     const baseRes = handleBase(url);
     if (baseRes) return baseRes;
