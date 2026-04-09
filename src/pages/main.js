@@ -1,5 +1,5 @@
-import { head } from './layout/head.js';
-import { footer } from './layout/footer.js';
+import { head } from './layout/head.jsx';
+import { footer } from './layout/footer.jsx';
 
 export const render = (data,lang) => {
 return `
@@ -19,7 +19,7 @@ ${head(data)}
     
     <main role="main" id="app">
       <div class="card">
-          <h1>Serverless IP Checker</h1>
+          <h1>IP Checker</h1>
           <h2>Your ip is</h2>
           <div class="ip">${data.ip}</div>
           <div class="info">
@@ -35,10 +35,6 @@ ${head(data)}
       <div class="map-container">
         <div id="map" data-lat="${data.lat}" data-lng="${data.lng}"></div>
         <div class="desc">The measurement location may not be accurate.</div>
-      </div>
-
-      <div class="content-ad">
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1216027646063680" data-ad-slot="2275435502" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
 
       <div class="content">

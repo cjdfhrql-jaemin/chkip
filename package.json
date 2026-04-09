@@ -3,15 +3,17 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"gen": "node mappings-gen.js",
-    	"dev": "npm run gen && wrangler dev",
-    	"dev_remote": "npm run gen && wrangler dev --remote",
-    	"deploy": "npm run gen && wrangler deploy",
-		"push": "git add . && git commit -m \"$npm_config_message\" && git push origin main"
-    },
+		"dev": "npx wrangler dev --ip 0.0.0.0 --port 8787",
+		"dev_remote": "npx wrangler dev --remote --inspector-port 9229",
+		"deploy": "wrangler deploy",
+		"push": "git add . && node -e \"const d=new Date(); const s=d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)+' '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)+':'+('0'+d.getSeconds()).slice(-2); try { require('child_process').execSync('git commit -m \\\"' + s + '\\\"'); } catch (e) { console.log('No changes to commit'); }\" && git push origin main"
+	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.12.4",
 		"vitest": "~3.2.0",
 		"wrangler": "^4.75.0"
+	},
+	"dependencies": {
+		"hono": "^4.12.12"
 	}
 }
