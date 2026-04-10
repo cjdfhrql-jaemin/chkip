@@ -14,8 +14,8 @@ footerRoute.get('/:page', async (c) => {
 	const host = c.req.header('host') || 'chktime.com';
 	let data = c.get('data');
 	
-	const translate = getLanguage(attrs.targetLang);
-	data = { ...data, host, translate };
+	const translated = getLanguage(page, attrs.targetLang);
+	data = { ...data, host, translated };
 
 	let module = null;
 	try {
@@ -27,7 +27,7 @@ footerRoute.get('/:page', async (c) => {
 
 	const Component = module.default;
 	const pageTitle = 'About';
-	attrs = { ...attrs, pageTitle };
+	attrs = { ...attrs, pageTitle, translated };
 
 	return c.html(
 		<Layout attrs={attrs}>

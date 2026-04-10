@@ -14,3 +14,12 @@ enabled = true
 [[routes]]
 pattern = "chkip.org"
 custom_domain = true
+
+[[hyperdrive]]
+binding = "HH_DB"
+id = "e59a2e35c40147149fa08190a6a5de40"
+localConnectionString = "mysql://bb:bb!!21!!22@61.253.226.125:3306/bb"
+
+[[kv_namespaces]]
+binding = "AT_KV"
+id = "372395425a234ebca58ccd1895527330"

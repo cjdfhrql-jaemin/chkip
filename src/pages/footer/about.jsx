@@ -7,7 +7,7 @@ export const About = ({ data }) => {
 		<main role="main" id="app">
 			<div class="content">
 				<h1>About {data.host.toUpperCase()}</h1>
-				<p>{data.translate.about}</p>
+				<p>{data.translated.about}</p>
 				<a href="/" class="back-btn">← Back to Home</a>
 			</div>
 		</main>

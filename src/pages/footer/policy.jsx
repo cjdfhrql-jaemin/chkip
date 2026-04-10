@@ -6,27 +6,27 @@ export const Policy = ({ data }) => {
 <div class="content">
     <h1>Privacy Policy</h1>
     <div class="policies">
-<strong>1. ${data.translate.policy1t}</strong>
-${data.translate.policy1c1}
-${data.translate.policy1c2}
+<strong>1. ${data.translated.policy1t}</strong>
+${data.translated.policy1c1}
+${data.translated.policy1c2}
 
-<strong>2. ${data.translate.policy2t}</strong>
-${data.translate.policy2c1}
+<strong>2. ${data.translated.policy2t}</strong>
+${data.translated.policy2c1}
 
-${data.translate.policy2c2}
+${data.translated.policy2c2}
 
-${data.translate.policy2c3}
+${data.translated.policy2c3}
 
-<strong>3. ${data.translate.policy3t}</strong>
-${data.translate.policy3c1}
+<strong>3. ${data.translated.policy3t}</strong>
+${data.translated.policy3c1}
 
-${data.translate.policy3c2}
+${data.translated.policy3c2}
 
-${data.translate.policy3c3}
+${data.translated.policy3c3}
 
-${data.translate.policy3c4}
+${data.translated.policy3c4}
 
-${data.translate.policy3c5} ${data.translate.policy3c6}
+${data.translated.policy3c5} ${data.translated.policy3c6}
     </div>
     <ul>
       <li><a href="https://policies.google.com/technologies/ads" target="_blank">Google’s Privacy & Terms</a></li>

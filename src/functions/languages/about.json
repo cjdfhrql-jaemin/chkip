@@ -1,0 +1,53 @@
+{
+	"ko": {
+		"about": "가장 순수하고 빠른 방식으로 네트워크 인사이트를 제공하기 위해 구축되었습니다. 전 세계적으로 낮은 지연 시간을 보장하기 위해 Cloudflare 에지 네트워크를 활용합니다. 당사는 로그를 저장하지 않으며, 실시간 연결 데이터를 제공하는 데만 집중합니다. 우리의 미션은 개발자와 파워 유저에게 신뢰할 수 있는 투명하고 프라이버시 우선적인 네트워킹 도구를 제공하는 것입니다."
+	},
+	"en": {
+		"about": "Built to deliver your network insights in the purest and fastest way possible. We leverage Cloudflare's edge network to ensure low-latency performance worldwide. We store no logs—focusing solely on providing you with real-time connectivity data. Our mission is to provide developers and power users with transparent, privacy-first networking tools they can trust."
+	},
+	"ja": {
+		"about": "ネットワークインサイトを最も純粋かつ最速の方法で提供するために構築されました。世界中で低レイテンシを保証するためにCloudflareのエッジネットワークを活用しています。ログは一切保存せず、リアルタイムの接続データを提供することに専念しています。私たちの使命は、開発者やパワーユーザーに、信頼できる透明でプライバシー重視のネットワークツールを提供することです。"
+	},
+	"zh": {
+		"about": "旨在以最纯粹、最快速的方式提供网络洞察。我们利用 Cloudflare 的边缘网络确保全球范围内的低延迟性能。我们不存储任何日志，专注于为您提供实时连接数据。我们的使命是为开发人员和高级用户提供他们可以信赖的透明、隐私优先的网络工具。"
+	},
+	"fr": {
+		"about": "Conçu pour fournir vos informations réseau de la manière la plus pure et la plus rapide possible. Nous utilisons le réseau edge de Cloudflare pour garantir des performances à faible latence dans le monde entier. Nous ne stockons aucun log, nous concentrant uniquement sur la fourniture de données de connectivité en temps réel. Notre mission est de fournir aux développeurs et aux utilisateurs avertis des outils réseau transparents et respectueux de la vie privée."
+	},
+	"de": {
+		"about": "Entwickelt, um Netzwerkinformationen so rein und schnell wie möglich bereitzustellen. Wir nutzen das Edge-Netzwerk von Cloudflare, um weltweit eine niedrige Latenzzeit zu gewährleisten. Wir speichern keine Protokolle – wir konzentrieren uns ausschließlich auf die Bereitstellung von Echtzeit-Konnektivitätsdaten. Unsere Mission ist es, Entwicklern und Power-Usern transparente, datenschutzorientierte Netzwerktools bereitzustellen."
+	},
+	"es": {
+		"about": "Diseñado para ofrecer sus conocimientos de red de la manera más pura y rápida posible. Aprovechamos la red edge de Cloudflare para garantizar un rendimiento de baja latencia en todo el mundo. No almacenamos registros, centrándonos únicamente en proporcionarle datos de conectividad en tiempo real. Nuestra misión es proporcionar a los desarrolladores y usuarios avanzados herramientas de red transparentes y que priorizan la privacidad."
+	},
+	"it": {
+		"about": "Creato per fornire le tue informazioni di rete nel modo più puro e veloce possibile. Sfruttiamo la rete edge di Cloudflare per garantire prestazioni a bassa latenza in tutto il mondo. Non memorizziamo log, concentrandoci esclusivamente sulla fornitura di dati di connettività in tempo reale. La nostra missione è fornire a sviluppatori e utenti esperti strumenti di rete trasparenti e attenti alla privacy."
+	},
+	"pt": {
+		"about": "Criado para entregar suas informações de rede da maneira mais pura e rápida possível. Aproveitamos a rede de borda do Cloudflare para garantir desempenho de baixa latência em todo o mundo. Não armazenamos logs — focando exclusivamente em fornecer dados de conectividade em tempo real. Nossa missão é fornecer aos desenvolvedores e usuários avançados ferramentas de rede transparentes e que priorizam a privacidade."
+	},
+	"ru": {
+		"about": "Создан для предоставления информации о вашей сети самым чистым и быстрым способом. Мы используем граничную сеть Cloudflare для обеспечения минимальной задержки по всему миру. Мы не храним логи, сосредотачиваясь исключительно на предоставлении данных о подключении в реальном времени. Наша миссия — предоставить разработчикам и продвинутым пользователям прозрачные инструменты для работы с сетью, ориентированные на конфиденциальность."
+	},
+	"hi": {
+		"about": "आपकी नेटवर्क अंतर्दृष्टि को शुद्धतम और सबसे तेज़ तरीके से वितरित करने के लिए बनाया गया है। हम दुनिया भर में कम विलंबता प्रदर्शन सुनिश्चित करने के लिए Cloudflare के एज नेटवर्क का लाभ उठाते हैं। हम कोई लॉग संग्रहीत नहीं करते हैं—केवल आपको रीयल-टाइम कनेक्टिविटी डेटा प्रदान करने पर ध्यान केंद्रित करते हैं। हमारा मिशन डेवलपर्स और पावर उपयोगकर्ताओं को पारदर्शी, गोपनीयता-प्रथम नेटवर्किंग टूल प्रदान करना है जिन पर वे भरोसा कर सकें।"	
+	},
+	"vi": {
+		"about": "Được xây dựng để cung cấp thông tin mạng của bạn một cách thuần khiết và nhanh nhất có thể. Chúng tôi tận dụng mạng lưới biên của Cloudflare để đảm bảo hiệu suất độ trễ thấp trên toàn thế giới. Chúng tôi không lưu trữ nhật ký—chỉ tập trung vào việc cung cấp cho bạn dữ liệu kết nối theo thời gian thực. Sứ mệnh của chúng tôi là cung cấp cho các nhà phát triển và người dùng nâng cao các công cụ mạng minh bạch, ưu tiên quyền riêng tư mà họ có thể tin tưởng."
+	},
+	"th": {
+		"about": "สร้างขึ้นเพื่อส่งข้อมูลเครือข่ายของคุณในวิธีที่บริสุทธิ์และรวดเร็วที่สุดเท่าที่จะเป็นไปได้ เราใช้เครือข่าย Edge ของ Cloudflare เพื่อให้มั่นใจถึงประสิทธิภาพที่มีความหน่วงต่ำทั่วโลก เราไม่เก็บล็อกใดๆ โดยมุ่งเน้นเพียงการให้ข้อมูลการเชื่อมต่อแบบเรียลไทม์แก่คุณเท่านั้น ภารกิจของเราคือการมอบเครื่องมือเครือข่ายที่โปร่งใสและให้ความสำคัญกับความเป็นส่วนตัวแก่เหล่านักพัฒนาและผู้ใช้ระดับสูงที่พวกเขาสามารถไว้วางใจได้"
+	},
+	"id": {
+		"about": "Dibangun untuk memberikan wawasan jaringan Anda dengan cara yang paling murni dan tercepat. Kami memanfaatkan jaringan edge Cloudflare untuk memastikan performa latensi rendah di seluruh dunia. Kami tidak menyimpan log—hanya fokus pada penyediaan data konektivitas real-time untuk Anda. Misi kami adalah menyediakan alat jaringan yang transparan dan mengutamakan privasi bagi pengembang dan pengguna tingkat lanjut yang dapat mereka percayai."
+	},
+	"tr": {
+		"about": "Ağ içgörülerinizi mümkün olan en saf ve en hızlı şekilde sunmak için oluşturuldu. Dünya çapında düşük gecikme süreli performans sağlamak için Cloudflare'in uç ağından yararlanıyoruz. Günlük tutmuyoruz; yalnızca size gerçek zamanlı bağlantı verileri sağlamaya odaklanıyoruz. Misyonumuz, geliştiricilere ve ileri düzey kullanıcılara güvenebilecekleri şeffaf, gizlilik odaklı ağ araçları sunmaktır."
+	},
+	"pl": {
+		"about": "Stworzony, aby dostarczać informacje o Twojej sieci w najczystszy i najszybszy możliwy sposób. Korzystamy z sieci brzegowej Cloudflare, aby zapewnić niskie opóźnienia na całym świecie. Nie przechowujemy logów – skupiamy się wyłącznie na dostarczaniu danych o łączności w czasie rzeczywistym. Naszą misją jest dostarczanie programistom i zaawansowanym użytkownikom przejrzystych, zorientowanych na prywatność narzędzi sieciowych, którym mogą ufać."
+	},
+	"ar": {
+		"about": "تم إنشاؤه لتقديم رؤى الشبكة الخاصة بك بأنقى وأسرع طريقة ممكنة. نحن نستفيد من شبكة الحافة الخاصة بـ Cloudflare لضمان أداء زمن انتقال منخفض في جميع أنحاء العالم. نحن لا نخزن أي سجلات - نركز فقط على تزويدك ببيانات اتصال فورية. مهمتنا هي تزويد المطورين والمستخدمين المحترفين بأدوات شبكات شفافة تعطي الأولوية للخصوصية ويمكنهم الوثوق بها."
+	}
+}

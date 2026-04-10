@@ -1,0 +1,155 @@
+{
+	"ko": {
+		"desc1_1": "CHKIP.ORG는 Cloudflare Workers를 기반으로 구축된 순수 서버리스 애플리케이션으로 작동합니다. 사용자에게 가장 가까운 네트워크 에지에서 요청을 처리하여 서버 지연 시간을 없앴습니다.",
+		"desc1_2": "모든 요청은 사용자로부터 가장 가까운 전 세계 300개 이상의 글로벌 데이터 센터에서 실시간으로 처리됩니다.",
+		"desc2_1": "V8 기반 서버리스 런타임으로서, 요청이 오리진 서버에 도달하기 전 에지(Edge)에서 JavaScript를 실행합니다.",
+		"desc2_2": "이 아키텍처는 제로에 가까운 지연 시간과 강력한 보안을 동시에 보장합니다.",
+		"desc3_1": "불필요한 리소스 로딩을 최소화하여 1KB 미만의 런타임 오버헤드로 서비스를 운영합니다. ",
+		"desc3_2": "사용자는 가장 신뢰할 수 있는 네트워크 경로를 통해 자신의 IP상태와 지리적 위치를 확인할 수 있습니다.",
+		"about": "가장 순수하고 빠른 방식으로 네트워크 인사이트를 제공하기 위해 구축되었습니다. 전 세계적으로 낮은 지연 시간을 보장하기 위해 Cloudflare 에지 네트워크를 활용합니다. 당사는 로그를 저장하지 않으며, 실시간 연결 데이터를 제공하는 데만 집중합니다. 우리의 미션은 개발자와 파워 유저에게 신뢰할 수 있는 투명하고 프라이버시 우선적인 네트워킹 도구를 제공하는 것입니다."
+	},
+	"en": {
+		"desc1_1": "Built on Cloudflare Workers, CHKIP.ORG operates as a pure serverless application, eliminating server latency by processing requests at the network edge, closest to you.",
+		"desc1_2": "All requests are processed in real-time at over 300 global data centers closest to the user.",
+		"desc2_1": "As a V8-based serverless runtime, it executes JavaScript at the Edge before requests even reach the origin server.",
+		"desc2_2": "This architecture ensures near-zero latency and robust security simultaneously.",
+		"desc3_1": "The service operates with less than 1KB of runtime overhead by minimizing unnecessary resource loading. ",
+		"desc3_2": "Users can verify their IPv4/IPv6 status and geographic location through the most reliable network path.",
+		"about": "Built to deliver your network insights in the purest and fastest way possible. We leverage Cloudflare's edge network to ensure low-latency performance worldwide. We store no logs—focusing solely on providing you with real-time connectivity data. Our mission is to provide developers and power users with transparent, privacy-first networking tools they can trust."
+	},
+	"ja": {
+		"desc1_1": "Cloudflare Workers上で構築されたCHKIP.ORGは、完全なサーバーレスアプリケーションとして動作します。ユーザーに最も近いネットワークエッジでリクエストを処理することで、サーバーの遅延を解消しました。",
+		"desc1_2": "すべてのリクエストは、ユーザーに最も近い世界300以上のグローバルデータセンターでリアルタイムに処理されます。",
+		"desc2_1": "V8ベースのサーバーレスランタイムとして、リクエストがオリジンサーバーに到達する前にエッジでJavaScriptを実行します。",
+		"desc2_2": "このアーキテクチャにより、ゼロに近いレイテンシと強力なセキュリティを同時に実現します。",
+		"desc3_1": "不要なリソースの読み込みを最小限に抑え、1KB未満のランタイムオーバーヘッドでサービスを運営しています。",
+		"desc3_2": "ユーザーは、最も信頼性の高いネットワークパスを通じて、自身のIPステータスと地理的位置を確認できます。",
+		"about": "ネットワークインサイトを最も純粋かつ最速の方法で提供するために構築されました。世界中で低レイテンシを保証するためにCloudflareのエッジネットワークを活用しています。ログは一切保存せず、リアルタイムの接続データを提供することに専念しています。私たちの使命は、開発者やパワーユーザーに、信頼できる透明でプライバシー重視のネットワークツールを提供することです。"
+	},
+	"zh": {
+		"desc1_1": "CHKIP.ORG 基于 Cloudflare Workers 构建，是一个纯粹的无服务器应用程序。我们通过在离您最近的网络边缘处理请求，消除了服务器延迟。",
+		"desc1_2": "所有请求均在离用户最近的全球 300 多个数据中心实时处理。",
+		"desc2_1": "作为基于 V8 的无服务器运行时，它在请求到达源服务器之前就在边缘端执行 JavaScript。",
+		"desc2_2": "这种架构同时确保了近乎零的延迟和强大的安全性。",
+		"desc3_1": "通过最小化不必要的资源加载，服务运行时的开销不到 1KB。",
+		"desc3_2": "用户可以通过最可靠的网络路径验证其 IP 状态和地理位置。",
+		"about": "旨在以最纯粹、最快速的方式提供网络洞察。我们利用 Cloudflare 的边缘网络确保全球范围内的低延迟性能。我们不存储任何日志，专注于为您提供实时连接数据。我们的使命是为开发人员和高级用户提供他们可以信赖的透明、隐私优先的网络工具。"
+	},
+	"fr": {
+		"desc1_1": "Construit sur Cloudflare Workers, CHKIP.ORG fonctionne comme une application purement sans serveur. Nous avons éliminé la latence du serveur en traitant les requêtes à la périphérie du réseau, au plus près de vous.",
+		"desc1_2": "Toutes les requêtes sont traitées en temps réel dans plus de 300 centres de données mondiaux au plus proche de l'utilisateur.",
+		"desc2_1": "En tant que runtime sans serveur basé sur V8, il exécute le JavaScript à l'Edge avant même que les requêtes n'atteignent le serveur d'origine.",
+		"desc2_2": "Cette architecture garantit simultanément une latence quasi nulle et une sécurité robuste.",
+		"desc3_1": "Le service fonctionne avec moins de 1 Ko de surcharge d'exécution en minimisant le chargement de ressources inutiles.",
+		"desc3_2": "Les utilisateurs peuvent vérifier leur statut IP et leur position géographique via le chemin réseau le plus fiable.",
+		"about": "Conçu pour fournir vos informations réseau de la manière la plus pure et la plus rapide possible. Nous utilisons le réseau edge de Cloudflare pour garantir des performances à faible latence dans le monde entier. Nous ne stockons aucun log, nous concentrant uniquement sur la fourniture de données de connectivité en temps réel. Notre mission est de fournir aux développeurs et aux utilisateurs avertis des outils réseau transparents et respectueux de la vie privée."
+	},
+	"de": {
+		"desc1_1": "Basierend auf Cloudflare Workers wird CHKIP.ORG als rein serverlose Anwendung betrieben. Wir haben Serverlatenzen eliminiert, indem wir Anfragen direkt am Netzwerkrand (Edge), so nah wie möglich an Ihnen, verarbeiten.",
+		"desc1_2": "Alle Anfragen werden in Echtzeit in über 300 globalen Rechenzentren in unmittelbarer Nähe des Nutzers verarbeitet.",
+		"desc2_1": "Als V8-basierte Serverless-Runtime führt es JavaScript an der Edge aus, noch bevor die Anfragen den Origin-Server erreichen.",
+		"desc2_2": "Diese Architektur gewährleistet gleichzeitig eine Latenzzeit von nahezu Null und robuste Sicherheit.",
+		"desc3_1": "Der Dienst arbeitet mit weniger als 1 KB Runtime-Overhead, indem das Laden unnötiger Ressourcen minimiert wird.",
+		"desc3_2": "Nutzer können ihren IP-Status und ihren geografischen Standort über den zuverlässigsten Netzwerkpfad überprüfen.",
+		"about": "Entwickelt, um Netzwerkinformationen so rein und schnell wie möglich bereitzustellen. Wir nutzen das Edge-Netzwerk von Cloudflare, um weltweit eine niedrige Latenzzeit zu gewährleisten. Wir speichern keine Protokolle – wir konzentrieren uns ausschließlich auf die Bereitstellung von Echtzeit-Konnektivitätsdaten. Unsere Mission ist es, Entwicklern und Power-Usern transparente, datenschutzorientierte Netzwerktools bereitzustellen."
+	},
+	"es": {
+		"desc1_1": "Construido sobre Cloudflare Workers, CHKIP.ORG funciona como una aplicación puramente sin servidor. Hemos eliminado la latencia del servidor al procesar las solicitudes en el borde de la red, lo más cerca posible de usted.",
+		"desc1_2": "Todas las solicitudes se procesan en tiempo real en más de 300 centros de datos globales más cercanos al usuario.",
+		"desc2_1": "Como un entorno de ejecución sin servidor basado en V8, ejecuta JavaScript en el Edge antes de que las solicitudes lleguen al servidor de origen.",
+		"desc2_2": "Esta arquitectura garantiza simultáneamente una latencia casi nula y una seguridad robusta.",
+		"desc3_1": "El servicio opera con menos de 1 KB de sobrecarga de ejecución al minimizar la carga de recursos innecesarios.",
+		"desc3_2": "Los usuarios pueden verificar su estado IP y su ubicación geográfica a través de la ruta de red más confiable.",
+		"about": "Diseñado para ofrecer sus conocimientos de red de la manera más pura y rápida posible. Aprovechamos la red edge de Cloudflare para garantizar un rendimiento de baja latencia en todo el mundo. No almacenamos registros, centrándonos únicamente en proporcionarle datos de conectividad en tiempo real. Nuestra misión es proporcionar a los desarrolladores y usuarios avanzados herramientas de red transparentes y que priorizan la privacidad."
+	},
+	"it": {
+		"desc1_1": "Basato su Cloudflare Workers, CHKIP.ORG opera come un'applicazione puramente serverless. Abbiamo eliminato la latencia del server elaborando le richieste ai margini della rete, il più vicino possibile a te.",
+		"desc1_2": "Tutte le richieste vengono elaborate in tempo reale in oltre 300 data center globali più vicini all'utente.",
+		"desc2_1": "Come runtime serverless basato su V8, esegue JavaScript all'Edge prima ancora che le richieste raggiungano il server di origine.",
+		"desc2_2": "Questa architettura garantisce contemporaneamente una latenza quasi nulla e una sicurezza robusta.",
+		"desc3_1": "Il servizio opera con meno di 1KB di overhead di runtime riducendo al minimo il caricamento di risorse non necessarie.",
+		"desc3_2": "Gli utenti possono verificare il proprio stato IP e la posizione geografica attraverso il percorso di rete più affidabile.",
+		"about": "Creato per fornire le tue informazioni di rete nel modo più puro e veloce possibile. Sfruttiamo la rete edge di Cloudflare per garantire prestazioni a bassa latenza in tutto il mondo. Non memorizziamo log, concentrandoci esclusivamente sulla fornitura di dati di connettività in tempo reale. La nostra missione è fornire a sviluppatori e utenti esperti strumenti di rete trasparenti e attenti alla privacy."
+	},
+	"pt": {
+		"desc1_1": "Construído no Cloudflare Workers, o CHKIP.ORG opera como uma aplicação puramente sem servidor. Eliminamos a latência do servidor processando as solicitações na borda da rede, o mais próximo possível de você.",
+		"desc1_2": "Todas as solicitações são processadas em tempo real em mais de 300 data centers globais mais próximos do usuário.",
+		"desc2_1": "Como um ambiente de execução sem servidor baseado em V8, ele executa JavaScript na borda antes mesmo que as solicitações cheguem ao servidor de origem.",
+		"desc2_2": "Essa arquitetura garante simultaneamente latência quase zero e segurança robusta.",
+		"desc3_1": "O serviço opera com menos de 1 KB de sobrecarga de execução, minimizando o carregamento de recursos desnecessários.",
+		"desc3_2": "Os usuários podem verificar seu status IP e localização geográfica através do caminho de rede mais confiável.",
+		"about": "Criado para entregar suas informações de rede da maneira mais pura e rápida possível. Aproveitamos a rede de borda do Cloudflare para garantir desempenho de baixa latência em todo o mundo. Não armazenamos logs — focando exclusivamente em fornecer dados de conectividade em tempo real. Nossa missão é fornecer aos desenvolvedores e usuários avançados ferramentas de rede transparentes e que priorizam a privacidade."
+	},
+	"ru": {
+		"desc1_1": "Созданный на базе Cloudflare Workers, CHKIP.ORG работает как чисто серверлесс-приложение. Мы устранили задержки сервера, обрабатывая запросы на границе сети, как можно ближе к вам.",
+		"desc1_2": "Все запросы обрабатываются в режиме реального времени в более чем 300 глобальных центрах обработки данных, ближайших к пользователю.",
+		"desc2_1": "Будучи бессерверной средой выполнения на базе V8, она выполняет JavaScript на граничном сервере еще до того, как запросы достигают сервера источника.",
+		"desc2_2": "Эта архитектура одновременно обеспечивает практически нулевую задержку и надежную безопасность.",
+		"desc3_1": "Сервис работает с накладными расходами на выполнение менее 1 КБ за счет минимизации загрузки ненужных ресурсов.",
+		"desc3_2": "Пользователи могут проверить свой статус IP и географическое положение через наиболее надежный сетевой путь.",
+		"about": "Создан для предоставления информации о вашей сети самым чистым и быстрым способом. Мы используем граничную сеть Cloudflare для обеспечения минимальной задержки по всему миру. Мы не храним логи, сосредотачиваясь исключительно на предоставлении данных о подключении в реальном времени. Наша миссия — предоставить разработчикам и продвинутым пользователям прозрачные инструменты для работы с сетью, ориентированные на конфиденциальность."
+	},
+	"hi": {
+		"desc1_1": "Cloudflare Workers पर निर्मित, CHKIP.ORG एक शुद्ध सर्वरलेस एप्लिकेशन के रूप में संचालित होता है। हमने नेटवर्क के किनारे (Edge) पर अनुरोधों को संसाधित करके सर्वर विलंबता को समाप्त कर दिया है, जो आपके सबसे करीब है।",
+		"desc1_2": "सभी अनुरोध उपयोगकर्ता के निकटतम 300 से अधिक वैश्विक डेटा केंद्रों में रीयल-टाइम में संसाधित होते हैं।",
+		"desc2_1": "एक V8-आधारित सर्वरलेस रनटाइम के रूप में, यह अनुरोधों के मूल सर्वर तक पहुँचने से पहले ही एज पर जावास्क्रिप्ट निष्पादित करता है।",
+		"desc2_2": "यह आर्किटेक्चर एक साथ शून्य के करीब विलंबता और मजबूत सुरक्षा सुनिश्चित करता है।",
+		"desc3_1": "अनावश्यक संसाधन लोडिंग को कम करके सेवा 1KB से कम रनटाइम ओवरहेड के साथ काम करती है।",
+		"desc3_2": "उपयोगकर्ता सबसे विश्वसनीय नेटवर्क पथ के माध्यम से अपनी IP स्थिति और भौगोलिक स्थिति को सत्यापित कर सकते हैं।",
+		"about": "आपकी नेटवर्क अंतर्दृष्टि को शुद्धतम और सबसे तेज़ तरीके से वितरित करने के लिए बनाया गया है। हम दुनिया भर में कम विलंबता प्रदर्शन सुनिश्चित करने के लिए Cloudflare के एज नेटवर्क का लाभ उठाते हैं। हम कोई लॉग संग्रहीत नहीं करते हैं—केवल आपको रीयल-टाइम कनेक्टिविटी डेटा प्रदान करने पर ध्यान केंद्रित करते हैं। हमारा मिशन डेवलपर्स और पावर उपयोगकर्ताओं को पारदर्शी, गोपनीयता-प्रथम नेटवर्किंग टूल प्रदान करना है जिन पर वे भरोसा कर सकें।"	
+	},
+	"vi": {
+		"desc1_1": "Được xây dựng trên Cloudflare Workers, CHKIP.ORG hoạt động như một ứng dụng không máy chủ thuần túy. Chúng tôi đã loại bỏ độ trễ của máy chủ bằng cách xử lý các yêu cầu tại biên mạng, gần bạn nhất.",
+		"desc1_2": "Mọi yêu cầu đều được xử lý theo thời gian thực tại hơn 300 trung tâm dữ liệu toàn cầu gần người dùng nhất.",
+		"desc2_1": "Là một runtime không máy chủ dựa trên V8, nó thực thi JavaScript tại Biên trước cả khi yêu cầu đến được máy chủ gốc.",
+		"desc2_2": "Kiến trúc này đảm bảo độ trễ gần như bằng không và tính bảo mật mạnh mẽ đồng thời.",
+		"desc3_1": "Dịch vụ hoạt động với mức tiêu tốn tài nguyên runtime chưa đến 1KB bằng cách giảm thiểu việc tải tài nguyên không cần thiết.",
+		"desc3_2": "Người dùng có thể xác minh trạng thái IP và vị trí địa lý của mình thông qua đường truyền mạng đáng tin cậy nhất.",
+		"about": "Được xây dựng để cung cấp thông tin mạng của bạn một cách thuần khiết và nhanh nhất có thể. Chúng tôi tận dụng mạng lưới biên của Cloudflare để đảm bảo hiệu suất độ trễ thấp trên toàn thế giới. Chúng tôi không lưu trữ nhật ký—chỉ tập trung vào việc cung cấp cho bạn dữ liệu kết nối theo thời gian thực. Sứ mệnh của chúng tôi là cung cấp cho các nhà phát triển và người dùng nâng cao các công cụ mạng minh bạch, ưu tiên quyền riêng tư mà họ có thể tin tưởng."
+	},
+	"th": {
+		"desc1_1": "CHKIP.ORG สร้างขึ้นบน Cloudflare Workers โดยทำงานเป็นแอปพลิ케ชันแบบ Serverless อย่างแท้จริง เราได้ขจัดความล่าช้าของเซิร์ฟเวอร์โดยการประมวลผลคำขอที่ขอบเครือข่าย ซึ่งอยู่ใกล้คุณที่สุด",
+		"desc1_2": "คำขอทั้งหมดได้รับการประมวลผลแบบเรียลไทม์ที่ศูนย์ข้อมูลทั่วโลกกว่า 300 แห่งที่ใกล้กับผู้ใช้มากที่สุด",
+		"desc2_1": "ในฐานะ Runtime แบบ Serverless ที่ใช้ V8 ระบบจะรัน JavaScript ที่ Edge ก่อนที่คำขอจะไปถึงเซิร์ฟเวอร์ต้นทางด้วยซ้ำ",
+		"desc2_2": "สถาปัตยกรรมนี้ช่วยให้มั่นใจได้ถึงความหน่วงที่ใกล้ศูนย์และความปลอดภัยที่แข็งแกร่งในเวลาเดียวกัน",
+		"desc3_1": "บริการนี้ทำงานโดยมีภาระ Runtime น้อยกว่า 1KB โดยการลดการโหลดทรัพยากรที่ไม่จำเป็น",
+		"desc3_2": "ผู้ใช้สามารถตรวจสอบสถานะ IP และตำแหน่งทางภูมิศาสตร์ผ่านเส้นทางเครือข่ายที่เชื่อถือได้มากที่สุด",
+		"about": "สร้างขึ้นเพื่อส่งข้อมูลเครือข่ายของคุณในวิธีที่บริสุทธิ์และรวดเร็วที่สุดเท่าที่จะเป็นไปได้ เราใช้เครือข่าย Edge ของ Cloudflare เพื่อให้มั่นใจถึงประสิทธิภาพที่มีความหน่วงต่ำทั่วโลก เราไม่เก็บล็อกใดๆ โดยมุ่งเน้นเพียงการให้ข้อมูลการเชื่อมต่อแบบเรียลไทม์แก่คุณเท่านั้น ภารกิจของเราคือการมอบเครื่องมือเครือข่ายที่โปร่งใสและให้ความสำคัญกับความเป็นส่วนตัวแก่เหล่านักพัฒนาและผู้ใช้ระดับสูงที่พวกเขาสามารถไว้วางใจได้"
+	},
+	"id": {
+		"desc1_1": "Dibangun di atas Cloudflare Workers, CHKIP.ORG beroperasi sebagai aplikasi serverless murni. Kami telah menghilangkan latensi server dengan memproses permintaan di tepi jaringan, yang terdekat dengan Anda.",
+		"desc1_2": "Semua permintaan diproses secara real-time di lebih dari 300 pusat data global terdekat dengan pengguna.",
+		"desc2_1": "Sebagai runtime serverless berbasis V8, ini mengeksekusi JavaScript di Edge bahkan sebelum permintaan mencapai server asal.",
+		"desc2_2": "Arsitektur ini memastikan latensi mendekati nol dan keamanan yang kuat secara bersamaan.",
+		"desc3_1": "Layanan beroperasi dengan overhead runtime kurang dari 1KB dengan meminimalkan pemuatan sumber daya yang tidak perlu.",
+		"desc3_2": "Pengguna dapat memverifikasi status IP dan lokasi geografis mereka melalui jalur jaringan yang paling andal.",
+		"about": "Dibangun untuk memberikan wawasan jaringan Anda dengan cara yang paling murni dan tercepat. Kami memanfaatkan jaringan edge Cloudflare untuk memastikan performa latensi rendah di seluruh dunia. Kami tidak menyimpan log—hanya fokus pada penyediaan data konektivitas real-time untuk Anda. Misi kami adalah menyediakan alat jaringan yang transparan dan mengutamakan privasi bagi pengembang dan pengguna tingkat lanjut yang dapat mereka percayai."
+	},
+	"tr": {
+		"desc1_1": "Cloudflare Workers üzerine inşa edilen CHKIP.ORG, tamamen sunucusuz bir uygulama olarak çalışır. İstekleri size en yakın ağ ucunda (edge) işleyerek sunucu gecikmesini ortadan kaldırdık.",
+		"desc1_2": "Tüm istekler, kullanıcıya en yakın 300'den fazla küresel veri merkezinde gerçek zamanlı olarak işlenir.",
+		"desc2_1": "V8 tabanlı sunucusuz bir çalışma zamanı olarak, istekler ana sunucuya ulaşmadan önce JavaScript'i Uçta (Edge) yürütür.",
+		"desc2_2": "Bu mimari, eş zamanlı olarak sıfıra yakın gecikme süresi ve sağlam güvenlik sağlar.",
+		"desc3_1": "Hizmet, gereksiz kaynak yüklemesini en aza indirerek 1 KB'tan daha az çalışma zamanı ek yükü ile çalışır.",
+		"desc3_2": "Kullanıcılar, en güvenilir ağ yolu üzerinden IP durumlarını ve coğrafi konumlarını doğrulayabilirler.",
+		"about": "Ağ içgörülerinizi mümkün olan en saf ve en hızlı şekilde sunmak için oluşturuldu. Dünya çapında düşük gecikme süreli performans sağlamak için Cloudflare'in uç ağından yararlanıyoruz. Günlük tutmuyoruz; yalnızca size gerçek zamanlı bağlantı verileri sağlamaya odaklanıyoruz. Misyonumuz, geliştiricilere ve ileri düzey kullanıcılara güvenebilecekleri şeffaf, gizlilik odaklı ağ araçları sunmaktır."
+	},
+	"pl": {
+		"desc1_1": "Zbudowany na Cloudflare Workers, CHKIP.ORG działa jako czysta aplikacja serverless. Wyeliminowaliśmy opóźnienia serwera, przetwarzając żądania na krawędzi sieci (Edge), najbliżej Ciebie.",
+		"desc1_2": "Wszystkie żądania są przetwarzane w czasie rzeczywistym w ponad 300 globalnych centrach danych położonych najbliżej użytkownika.",
+		"desc2_1": "Jako bezserwerowe środowisko uruchomieniowe oparte na V8, wykonuje JavaScript na krawędzi (Edge), zanim żądania dotrą do serwera źródłowego.",
+		"desc2_2": "Taka architektura zapewnia jednocześnie opóźnienia bliskie zeru oraz solidne bezpieczeństwo.",
+		"desc3_1": "Usługa działa z narzutem środowiska uruchomieniowego mniejszym niż 1 KB dzięki minimalizacji ładowania niepotrzebnych zasobów.",
+		"desc3_2": "Użytkownicy mogą weryfikować swój status IP oraz lokalizację geograficzną za pośrednictwem najbardziej niezawodnej ścieżki sieciowej.",
+		"about": "Stworzony, aby dostarczać informacje o Twojej sieci w najczystszy i najszybszy możliwy sposób. Korzystamy z sieci brzegowej Cloudflare, aby zapewnić niskie opóźnienia na całym świecie. Nie przechowujemy logów – skupiamy się wyłącznie na dostarczaniu danych o łączności w czasie rzeczywistym. Naszą misją jest dostarczanie programistom i zaawansowanym użytkownikom przejrzystych, zorientowanych na prywatność narzędzi sieciowych, którym mogą ufać."
+	},
+	"ar": {
+		"desc1_1": "تم بناء CHKIP.ORG على Cloudflare Workers، ليعمل كـتطبيق بدون خادم تمامًا. لقد قضينا على تأخير الخادم من خلال معالجة الطلبات عند حافة الشبكة، الأقرب إليك.",
+		"desc1_2": "تتم معالجة جميع الطلبات في الوقت الفعلي في أكثر من 300 مركز بيانات عالمي هي الأقرب للمستخدم.",
+		"desc2_1": "كبيئة تشغيل بدون خادم تعتمد على V8، فإنه ينفذ لغة JavaScript عند الحافة حتى قبل وصول الطلبات إلى الخادم الأصلي.",
+		"desc2_2": "تضمن هذه البنية في نفس الوقت زمن انتقال قريب من الصفر وأمانًا قويًا.",
+		"desc3_1": "تتم إدارة الخدمة بأقل من 1 كيلوبايت من عبء وقت التشغيل من خلال تقليل تحميل الموارد غير الضرورية.",
+		"desc3_2": "يمكن للمستخدمين التحقق من حالة IP والموقع الجغرافي من خلال أكثر مسارات الشبكة موثوقية.",
+		"about": "تم إنشاؤه لتقديم رؤى الشبكة الخاصة بك بأنقى وأسرع طريقة ممكنة. نحن نستفيد من شبكة الحافة الخاصة بـ Cloudflare لضمان أداء زمن انتقال منخفض في جميع أنحاء العالم. نحن لا نخزن أي سجلات - نركز فقط على تزويدك ببيانات اتصال فورية. مهمتنا هي تزويد المطورين والمستخدمين المحترفين بأدوات شبكات شفافة تعطي الأولوية للخصوصية ويمكنهم الوثوق بها."
+	}
+}

@@ -28,7 +28,8 @@ export const Head = function ({ attrs, title }) {
 		<meta property="twitter:image" content="https://${attrs?.host}/assets/images/og-image.png" />
 		<meta property="twitter:description" content="${attrs?.pageDesc || ''}" />
 
-		<link rel="canonical" href="${attrs?.pageUrl}" />
+		<link rel="canonical" href="${attrs?.canonicalUrl || attrs?.pageUrl}" />
+
 		<link rel="stylesheet" href="/assets/style.css" />
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1216027646063680" crossorigin="anonymous"></script>
 

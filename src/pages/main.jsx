@@ -6,7 +6,7 @@ export const Main = ({ data }) => {
 
 	return html`
 		<main role="main" id="app">
-			<div class="card">
+			<div class="card ip-info">
 				<h1>IP Checker</h1>
 				<h2>Your ip is</h2>
 				<div class="ip">${data.ip}</div>
@@ -25,15 +25,28 @@ export const Main = ({ data }) => {
 				<div class="desc">The measurement location may not be accurate.</div>
 			</div>
 
+			<div class="articles">
+				<article class="card">
+					<img src="${data.articles.article_1.image}" alt="${data.articles.article_1.title}" />
+					<h3>${data.articles.article_1.title}</h3>
+					<a href="/article/1">자세히 보기</a>
+				</article>
+
+				<article class="card">
+					<img src="${data.articles.article_2.image}" alt="${data.articles.article_2.title}" />
+					<h3>${data.articles.article_2.title}</h3>
+					<a href="/article/2">자세히 보기</a>
+  				</article>
+			</div>
 			<div class="content">
 				<h2>Serverless Architecture</h2>
-				<p>${data.translate.desc1_1}&nbsp;${data.translate.desc1_2}</p>
+				<p>${data.translated.desc1_1}&nbsp;${data.translated.desc1_2}</p>
 				<div class="tech-note">
 					<strong>What is Cloudflare Workers?</strong><br />
-					${data.translate.desc2_1}&nbsp;${data.translate.desc2_2}
+					${data.translated.desc2_1}&nbsp;${data.translated.desc2_2}
 				</div>
 				<h2 style="margin-top:30px;">Optimized Network Visibility</h2>
-				<p>${data.translate.desc3_1}&nbsp;${data.translate.desc3_2}</p>
+				<p>${data.translated.desc3_1}&nbsp;${data.translated.desc3_2}</p>
 			</div>
 
 <script>
