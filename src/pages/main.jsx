@@ -1,42 +1,42 @@
 /** @jsx jsx */
 import { jsx } from 'hono/jsx'
+import { html } from 'hono/html'
 
 export const Main = ({ data }) => {
 
-	return (
+	return html`
 		<main role="main" id="app">
 			<div class="card">
 				<h1>IP Checker</h1>
 				<h2>Your ip is</h2>
-				<div class="ip">{data.ip}</div>
+				<div class="ip">${data.ip}</div>
 				<div class="info">
-					<span>{data.city}, {data.countryTimeZone}</span>
-					<img src={`https://hh.pe.kr/assets/img/flags/${data.countryCode}.png`} alt={data.countryName} onerror="this.style.display='none'" />
+					<span>${data.city}, ${data.countryName}</span>
+					<img src="https://hh.pe.kr/assets/img/flags/${data.countryCode.toLowerCase()}.png" alt={data.countryName} onerror="this.style.display='none'" />
 				</div>
 				<div class="desc">
-					Network: {data.isp}
+					Network: ${data.isp}
 					<blockquote>Privacy-focused analytics. We respect your data and comply with global privacy standards. <a href="/policy">Privacy Policy</a></blockquote>
 				</div>
 			</div>
 
 			<div class="map-container">
-				<div id="map" data-lat={data.lat} data-lng={data.lng}></div>
+				<div id="map" data-lat=${data.lat} data-lng=${data.lng}></div>
 				<div class="desc">The measurement location may not be accurate.</div>
 			</div>
 
 			<div class="content">
 				<h2>Serverless Architecture</h2>
-				<p>{data.translate.desc1_1}&nbsp;{data.translate.desc1_2}</p>
+				<p>${data.translate.desc1_1}&nbsp;${data.translate.desc1_2}</p>
 				<div class="tech-note">
 					<strong>What is Cloudflare Workers?</strong><br />
-					{data.translate.desc2_1}&nbsp;{data.translate.desc2_2}
+					${data.translate.desc2_1}&nbsp;${data.translate.desc2_2}
 				</div>
 				<h2 style="margin-top:30px;">Optimized Network Visibility</h2>
-				<p>{data.translate.desc3_1}&nbsp;{data.translate.desc3_2}</p>
+				<p>${data.translate.desc3_1}&nbsp;${data.translate.desc3_2}</p>
 			</div>
 
-			<script dangerouslySetInnerHTML={{
-				__html: `
+<script>
 function getRemoteDateTime() {
 	const now = new Date();
 
@@ -68,7 +68,6 @@ function updateClock() {
 window.onload = function() { 
 	initHome('${data.lat}', '${data.lng}');
 };
-
 
 const MAP_CONFIG = { zoomLevel: 13, flyDuration: 1.0, initialZoom: 3, markerRadius: 10 };
 let map;
@@ -112,10 +111,9 @@ setInterval(updateClock, 1000);
 
 L.marker([lat, lng], { icon: pulseIcon }).addTo(map).bindPopup(popupContent).openPopup();
 }
-`
-			}} />
+</script>
 		</main>
-	);
+`;
 }
 
 export default Main;

@@ -55,22 +55,24 @@ app.get('/:country', async (c) => {
 	const { country } = c.req.param();
     let attrs = c.get('attrs');
 
-    const cf = c.req.raw.cf || {};
+
+    const cf = c.req.cf || c.req.raw?.cf;
     const ip = c.req.header('cf-connecting-ip') || c.req.header('x-real-ip') || c.req.header('cf-pseudo-ipv4') || "8.8.8.8";
+    const lat = cf?.latitude || 37.5665;
+    const lng = cf?.longitude || 126.9780;
+    const city = cf?.city || 'Unknown';
+    const countryCode = cf?.country || 'KR';
+    const countryName = regionNames.of(countryCode);
+    const isp = cf?.asOrganization || 'ISP';
 
-    const lat = c.req.cf?.latitude || 37.5665;
-    const lng = c.req.cf?.longitude || 126.9780;
-    const city = c.req.cf?.city || 'Unknown';
-    const isp = c.req.cf?.asOrganization || 'ISP';
-
-    const countryTimeZone = c.req.cf?.timezone || 'Asia/Seoul';
+    const countryTimeZone = cf?.timezone || 'Asia/Seoul';
     const translate = getLanguage(country);
 
     const pageDesc = 'Instantly verify your public IP address (IPv4/IPv6). Get precise geolocation data including city, coordinates, and ISP provider information with zero latency.';
     const pageTitle = 'What is my IP? - Fast & Accurate IP Geolocation';
 
     attrs = { ...attrs, pageDesc, pageTitle };
-    const data = { ...attrs, ip, lat, lng, city, isp, translate, countryTimeZone };
+    const data = { ...attrs, ip, lat, lng, city, isp, translate, countryCode, countryName, countryTimeZone };
 
     return c.html(
         <Layout attrs={attrs}>
