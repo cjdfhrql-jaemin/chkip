@@ -13,7 +13,7 @@ html, body {padding: 0;margin: 0;}
 body {font-size: 16px;font-family:'D2 coding';background: var(--bg);color: var(--text);margin: 0;line-height: 1.6;word-break: keep-all;letter-spacing: 0.25px;}
 body * {padding: 0;margin: 0;}
 
-.container {position: relative;width: 100%;padding: 20px 0;display: flex;flex-direction: column;align-items: center;}
+.container {position: relative;width: 100%;padding:0 0 20px;display: flex;flex-direction: column;align-items: center;}
 .container main {max-width:720px;margin: 0 auto;}
 
 .content-ad {width:100%;margin-top: 1rem;}
@@ -24,8 +24,8 @@ body * {padding: 0;margin: 0;}
 [class$=-ad] {background: var(--card-bg);border-radius: 20px;padding: 15px;box-sizing: border-box;}
 [class$=-ad]:before {content:"AD";position:absolute;top: 10px;left: 10px;color:var(--dim);font-size: 12px;font-style: italic;}
 
-.logo {display: inline-block;color: var(--blue);font-style: italic;font-weight: 900;font-size: 2rem;margin: 2rem 0;cursor: pointer;text-shadow: 3px 3px 3px var(--blue);}
-.logo span { color: var(--dim); }
+.logo {display: inline-block;color: var(--primary);font-style: italic;font-weight: 900;font-size: 2rem;margin: 2rem 0;cursor: pointer;text-shadow: 3px 3px 3px var(--primary);}
+.logo span { color: var(--text); }
 
 
 .card { background: var(--card-bg); padding: 1.5rem 2rem; border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); width: 100%; box-sizing: border-box; border: 1px solid #eaeaea; position: relative; overflow: hidden; }
@@ -136,6 +136,6 @@ footer ul li a:hover { text-decoration: underline; }
   .card {padding:2rem 0;}
 }
 
-@media (max-width: 1210px) {
+@media (max-width: 1280px) {
   .side-ad { display: none; }
 }

@@ -1,9 +1,8 @@
 import { Hono } from 'hono'
 
-import { getLanguage } from './functions/lang'
+import { getLanguage, getCountry } from './functions/lang'
 import { Layout } from './pages/layout/template.jsx'
 import { handleMetaFile } from './handle-metafile.js'
-import { prettyHtml } from './functions/pretty-html.js'
 
 /** @jsx jsx */
 import { jsx } from 'hono/jsx'
@@ -12,7 +11,7 @@ const app = new Hono();
 
 const getDomain = (c) => {
     const encoded = c.req.header('x-encoded-host');
-    let domain = 'chktime.com'; // 기본값
+    let domain = 'chkip.org'; // 기본값
 
     if (encoded) {
         try {
@@ -34,56 +33,60 @@ app.use('*', async (c, next) => {
     }
 
     const domain = getDomain(c);
-    const cf = c.req.raw.cf || {};
-
     const host = domain || c.req.header('host');
-    const ip = c.req.header('cf-pseudo-ipv4') || c.req.header('cf-connecting-ip') || "8.8.8.8";
+    const pageUrl = c.req.url;
+    const acceptLang = c.req.header('accept-language') || '';
+    const targetLang = getCountry(acceptLang);
+    const attrs = { host, pageUrl, targetLang };
+
+    c.set('attrs', attrs);
+    await next();
+});
+
+import Main from './pages/main.jsx';
+
+const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+app.get('/', (c) => {
+    const attrs = c.get('attrs');
+    return c.redirect(`/${attrs.targetLang}`, 302);
+});
+
+app.get('/:country', async (c) => {
+	const { country } = c.req.param();
+    let attrs = c.get('attrs');
+
+    const cf = c.req.raw.cf || {};
+    const ip = c.req.header('cf-connecting-ip') || c.req.header('x-real-ip') || c.req.header('cf-pseudo-ipv4') || "8.8.8.8";
+
     const lat = c.req.cf?.latitude || 37.5665;
     const lng = c.req.cf?.longitude || 126.9780;
     const city = c.req.cf?.city || 'Unknown';
     const isp = c.req.cf?.asOrganization || 'ISP';
-    const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
-    const countryCode = (c.req.cf?.country || 'KR');
-    const countryName = regionNames.of(countryCode || 'KR');
+
     const countryTimeZone = c.req.cf?.timezone || 'Asia/Seoul';
-    const lang = getLanguage(cf);
-    const data = {
-        ip, lat, lng, city, isp, lang, countryCode, countryName, countryTimeZone, host
-    };
+    const translate = getLanguage(country);
 
-    c.set('data', data);
+    const pageDesc = 'Instantly verify your public IP address (IPv4/IPv6). Get precise geolocation data including city, coordinates, and ISP provider information with zero latency.';
+    const pageTitle = 'What is my IP? - Fast & Accurate IP Geolocation';
 
-    if (typeof next === 'function') {
-        await next();
-    }
-
-    if (host.startsWith('local.hh.pe.kr')) {
-        const contentType = c.res.headers.get('Content-Type');
-        if (contentType && contentType.includes('text/html')) {
-            await prettyHtml(c);
-        }
-    }
-});
-
-import footerRoute from './routes/footer-route.js'
-app.route('/footer', footerRoute);
-
-import Main from './pages/main.jsx';
-
-app.get('/', async (c) => {
-    const data = c.get('data');
-    const domain = data.domain;
+    attrs = { ...attrs, pageDesc, pageTitle };
+    const data = { ...attrs, ip, lat, lng, city, isp, translate, countryTimeZone };
 
     return c.html(
-        <Layout title={domain}>
+        <Layout attrs={attrs}>
             <Main data={data} />
         </Layout>
     );
 });
 
+import footerRoute from './routes/footer-route.js'
+app.route('/footer', footerRoute);
+
 app.notFound((c) => {
+    let attrs = c.get('attrs');
+    attrs = { ...attrs, pageDesc: 'Page not found', pageTitle: 'Page Not Found' };
     return c.html(
-        <Layout title="404">
+        <Layout attrs={attrs}>
             <div class="card not-found">Not Found Page</div>
         </Layout>, 404);
 });

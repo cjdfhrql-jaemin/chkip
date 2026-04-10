@@ -1,9 +1,9 @@
 import languages from './languages.json'
 
-export function getLanguage(cf) {
+export function getLanguage(countryCode) {
 
 	const originalTexts = {
-		desc1_1: "CHKIP.ORG is built on Cloudflare Workers edge computing technology, operating without traditional web servers or physical source files. ",
+		desc1_1: "Built on Cloudflare Workers, CHKIP.ORG operates as a pure serverless application, eliminating server latency by processing requests at the network edge, closest to you.",
 		desc1_2: "All requests are processed in real-time at over 300 global data centers closest to the user.",
 		desc2_1: "As a V8-based serverless runtime, it executes JavaScript at the Edge before requests even reach the origin server.",
 		desc2_2: "This architecture ensures near-zero latency and robust security simultaneously.",
@@ -40,29 +40,21 @@ export function getLanguage(cf) {
 		policy4c: "For any questions regarding this policy, please contact us at ljmsp83@naver.com."
 	};
 
-	const countryMap = {
-		'KR': 'korean',
-		'JP': 'japanese',
-		'CN': 'chinese',
-		'TW': 'chinese',
-		'FR': 'french',
-		'DE': 'german',
-		'ES': 'spanish',
-		'MX': 'spanish',
-		'IT': 'italian',
-		'PT': 'portuguese',
-		'BR': 'portuguese',
-		'RU': 'russian',
-		'VN': 'vietnamese',
-		'TH': 'thai',
-		'ID': 'indonesian',
-		'TR': 'turkish',
-		'SA': 'arabic',
-		'AE': 'arabic'
-	};
-
-	const countryCode = typeof cf === 'string' ? cf : (cf?.country || 'US');
-	const targetLangName = countryMap[countryCode] || "english";
-	const lang = languages[targetLangName] || languages["english"];
+	const lang = languages[countryCode] || languages["en"];
 	return lang;
+}
+
+export function getCountry(acceptLang) { 
+    
+    const supportedLangs = ['ko', 'ja', 'zh', 'fr', 'de', 'es', 'it', 'pt','ru', 'vi', 'th', 'id', 'tr', 'ar', 'pl', 'hi', 'en'];
+    let targetLang = 'en';
+
+    for (const lang of supportedLangs) {
+        if (acceptLang.includes(lang)) {
+            targetLang = lang;
+            break;
+        }
+    }
+    
+    return targetLang;
 }

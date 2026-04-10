@@ -5,10 +5,10 @@ import { Head } from './head.jsx'
 import { Footer } from './footer.jsx'
 
 // 2. 인자로 title과 children을 받아야 함
-export const Layout = ({ title, children }) => {
+export const Layout = ({ attrs, children }) => {
 	return (
-		<html lang="${data.countryCode.toLowerCase()}">
-			<Head title={title} />
+		<html lang="${attrs.countryCode.toLowerCase()}">
+			<Head attrs={attrs} title={attrs.pageTitle} />
 			<body>
 				<div class="left-side side-ad">
 					<ins class="adsbygoogle"
@@ -30,7 +30,7 @@ export const Layout = ({ title, children }) => {
 				</div>
 				<div class="container">
 					<div class="logo" style={{ cursor: 'pointer' }} onclick="location.href='/'">
-						CHKTIME<span>.COM</span>
+						CHKIP<span>.ORG</span>
 					</div>
 
 					{children}
