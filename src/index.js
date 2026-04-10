@@ -71,7 +71,7 @@ app.get('/:country', async (c) => {
     const pageDesc = 'Instantly verify your public IP address (IPv4/IPv6). Get precise geolocation data including city, coordinates, and ISP provider information with zero latency.';
     const pageTitle = 'What is my IP? - Fast & Accurate IP Geolocation';
 
-    attrs = { ...attrs, pageDesc, pageTitle };
+    attrs = { ...attrs, pageDesc, pageTitle, countryCode };
     const data = { ...attrs, ip, lat, lng, city, isp, translate, countryCode, countryName, countryTimeZone };
 
     return c.html(

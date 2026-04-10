@@ -20,12 +20,12 @@ export const Head = function ({ attrs, title }) {
 		<meta property="og:url" content="${attrs?.pageUrl}" />
 		<meta property="og:title" content="${attrs?.pageTitle}" />
 		<meta property="og:description" content="${attrs?.pageDesc}" />
-		<meta property="og:image" content="${attrs?.url?.origin}/assets/images/og-image.png" />
+		<meta property="og:image" content="https://${attrs?.host}/assets/images/og-image.png" />
 
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content="${attrs?.pageUrl}" />
 		<meta property="twitter:title" content="${attrs?.pageTitle}" />
-		<meta property="twitter:image" content="${attrs?.url?.origin}/assets/images/og-image.png" />
+		<meta property="twitter:image" content="https://${attrs?.host}/assets/images/og-image.png" />
 		<meta property="twitter:description" content="${attrs?.pageDesc || ''}" />
 
 		<link rel="canonical" href="${attrs?.pageUrl}" />

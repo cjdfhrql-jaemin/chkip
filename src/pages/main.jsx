@@ -40,13 +40,11 @@ export const Main = ({ data }) => {
 function getRemoteDateTime() {
 	const now = new Date();
 
-	// 날짜 포맷 (2026년 3월 12일 목요일)
 	const dateStr = new Intl.DateTimeFormat('ko-KR', {
 		year: 'numeric', month: 'long', day: 'numeric', weekday: 'short',
 		timeZone: "Asia/Seoul"
 	}).format(now);
 
-	// 시간 포맷 (14:30:05)
 	const timeStr = new Intl.DateTimeFormat('ko-KR', {
 		hour: '2-digit', minute: '2-digit', second: '2-digit',
 		hour12: false,
@@ -56,7 +54,6 @@ function getRemoteDateTime() {
 	return { dateStr, timeStr };
 }
 
-//팝업 업데이트 함수
 function updateClock() {
 	const { dateStr, timeStr } = getRemoteDateTime();
 	const dateEl = document.getElementById('remote-date');
@@ -83,10 +80,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 setTimeout(function() {
-	map.invalidateSize(true); // true 옵션 : 애니메이션과 함께 부드럽게 재배치
+	map.invalidateSize(true);
 }, 100);
 
-// 4. 초기 팝업 내용 설정
 const initial = getRemoteDateTime();
 const popupContent = \`
 	<div style="text-align:center; min-width:180px; font-family: sans-serif;">
