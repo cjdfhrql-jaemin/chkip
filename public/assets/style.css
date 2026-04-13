@@ -116,7 +116,10 @@ blockquote {margin-top: 1rem;padding-top: 1rem;text-align: left;border-top: 1px 
 .card.article h2{font-size: 1.5rem;margin-bottom:2rem;text-align: center;}
 .card.article h3{font-size: 1.25rem;margin-bottom: 1rem;}
 
-.card.article ul {padding-left: 1.5rem;}
+.card.article ul , .card.article ol {margin-top:1rem;padding-left: 1rem;}
+.card.article li {list-style-position: inside;text-indent: -1.5em;padding-left: 1.5em;}
+.card.article li > * {display: inline;}
+
 .card.article .source {margin-top:2rem;font-size: 1.25rem;}
 .card.article .source a {position: relative;text-decoration:none;}
 .card.article .source a:after {
