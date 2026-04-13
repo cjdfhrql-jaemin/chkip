@@ -9,21 +9,6 @@ import { jsx } from 'hono/jsx'
 
 const app = new Hono();
 
-const getDomain = (c) => {
-    const encoded = c.req.header('x-encoded-host');
-    let domain = 'chkip.org'; // 기본값
-
-    if (encoded) {
-        try {
-            // Base64를 다시 텍스트로 변환
-            domain = atob(encoded);
-        } catch (e) {
-            console.error('인코딩 오류:', e);
-        }
-    }
-    return domain || c.req.header('host');
-}
-
 app.use('*', async (c, next) => {
 
     const metaResponse = await handleMetaFile(c);
@@ -32,8 +17,7 @@ app.use('*', async (c, next) => {
         return metaResponse;
     }
 
-    const domain = getDomain(c);
-    const host = domain || c.req.header('host');
+    const host = c.req.header('host') || 'chkip.org';
     const pageUrl = c.req.url;
     const acceptLang = c.req.header('accept-language') || '';
     const targetLang = getCountry(acceptLang);
@@ -48,6 +32,15 @@ import Main from './pages/main.jsx';
 const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
 app.get('/', (c) => {
     const attrs = c.get('attrs');
+
+const allHeaders = c.req.header();
+console.log("All Headers:", JSON.stringify(allHeaders, null, 2));
+
+const host = c.req.header('host');
+const forwardedHost = c.req.header('x-forwarded-host');
+console.log("Current Host:", host);
+console.log("Forwarded Host:", forwardedHost);
+
     return c.redirect(`/${attrs.targetLang}`, 302);
 });
 

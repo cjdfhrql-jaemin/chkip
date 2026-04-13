@@ -16,7 +16,7 @@ export const Main = ({ data }) => {
 				</div>
 				<div class="desc">
 					Network: ${data.isp}
-					<blockquote>Privacy-focused analytics. We respect your data and comply with global privacy standards. <a href="/policy">Privacy Policy</a></blockquote>
+					<blockquote>Privacy-focused analytics. We respect your data and comply with global privacy standards. <a href="/footer/policy">Privacy Policy</a></blockquote>
 				</div>
 			</div>
 
@@ -29,13 +29,13 @@ export const Main = ({ data }) => {
 				<article class="card">
 					<img src="${data.articles.article_1.image}" alt="${data.articles.article_1.title}" />
 					<h3>${data.articles.article_1.title}</h3>
-					<a href="/article/1">자세히 보기</a>
+					<a href="/article/1">Details</a>
 				</article>
 
 				<article class="card">
 					<img src="${data.articles.article_2.image}" alt="${data.articles.article_2.title}" />
 					<h3>${data.articles.article_2.title}</h3>
-					<a href="/article/2">자세히 보기</a>
+					<a href="/article/2">Details</a>
   				</article>
 			</div>
 			<div class="content">
