@@ -31,8 +31,7 @@ articleRoute.get('/:id', async (c) => {
 	try {
 
 		const feedData = await feeds.getFeeds({ table: 'g5_write_tip', id: idMap[id] });
-		const translatedTitle = getLanguage('article', attrs.targetLang);
-		const pageTitle = translatedTitle[`a${id}_title`];
+		const title = feedData[0].title;
 		const content = feedData[0].content;
 
 		let translatedText;
@@ -43,12 +42,12 @@ articleRoute.get('/:id', async (c) => {
 		}
 
 		const canonicalUrl = `https://hh.pe.kr/tip/${idMap[id]}`;
-		attrs = { ...attrs, canonicalUrl, pageTitle };
+		attrs = { ...attrs, canonicalUrl, pageTitle:title };
 
 		return c.html(
 			<Layout attrs={attrs}>
 				<main role="main" id="app">
-					<Article content={translatedText} canonicalUrl={canonicalUrl}/>
+					<Article content={translatedText} canonicalUrl={canonicalUrl} title={title} />
 				</main>
 			</Layout>
 		);

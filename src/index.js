@@ -32,17 +32,8 @@ import Main from './pages/main.jsx';
 const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
 app.get('/', (c) => {
     const attrs = c.get('attrs');
-
-const allHeaders = c.req.header();
-console.log("All Headers:", JSON.stringify(allHeaders, null, 2));
-
-const host = c.req.header('host');
-const forwardedHost = c.req.header('x-forwarded-host');
-console.log("Current Host:", host);
-console.log("Forwarded Host:", forwardedHost);
-
     return c.redirect(`/${attrs.targetLang}`, 302);
-});
+}); // 메인 페이지는 언어별로 리다이렉트
 
 app.get('/:country', async (c) => {
     const { country } = c.req.param();
