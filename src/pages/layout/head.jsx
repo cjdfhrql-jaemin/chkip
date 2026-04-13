@@ -35,11 +35,13 @@ export const Head = function ({ attrs, title }) {
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" />
 
+		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
 		<link rel="icon" type="image/png" sizes="48x48" href="/assets/icons/icon-48.png" />
-		<link rel="shortcut icon" href="/assets/icons/icon-32.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+		<link rel="apple-touch-icon" sizes="192x192" href="/assets/icons/icon-192.png" />
+		<link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/icon-512.png" />
 
 		<link rel="alternate" hreflang="x-default" href="${attrs?.siteUrl}/" />
 		<link rel="alternate" hreflang="ko" href="${attrs?.siteUrl}/?lang=ko" />
