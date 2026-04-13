@@ -52,11 +52,11 @@ app.get('/', (c) => {
 });
 
 app.get('/:country', async (c) => {
-	const { country } = c.req.param();
+    const { country } = c.req.param();
     let attrs = c.get('attrs');
 
     const cf = c.req.cf || c.req.raw?.cf;
-    const ip = c.req.header('cf-connecting-ip') || c.req.header('x-real-ip') || c.req.header('cf-pseudo-ipv4') || "8.8.8.8";
+    const ip = c.req.header('cf-pseudo-ipv4') || c.req.header('cf-connecting-ip') || c.req.header('x-real-ip') || "8.8.8.8";
     const lat = cf?.latitude || 37.5665;
     const lng = cf?.longitude || 126.9780;
     const city = cf?.city || 'Unknown';
