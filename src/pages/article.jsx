@@ -11,7 +11,7 @@ export const Article = ({ content, canonicalUrl, title }) => {
 			<div class="card article">
 				<h2>${title}</h2>
 				${raw(content)}
-
+				<hr />
 				<div class="source">Source : <a href="${canonicalUrl}" target="_blank">${canonicalUrl}</a></div>
 			</div>
 		</main>
