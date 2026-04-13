@@ -16,7 +16,7 @@ body * {padding: 0;margin: 0;}
 .container {position: relative;width: 100%;padding:0 0 20px;display: flex;flex-direction: column;align-items: center;box-sizing: border-box;}
 .container main {max-width:720px;margin: 0 auto;width: 100%;animation: fadeIn 0.4s;}
 
-.content-ad {width:100%;margin-top: 1rem;}
+.content-ad {position: relative;width:100%;margin-top: 1rem;}
 .side-ad {position: fixed;top: 1rem;width: 180px;z-index:1;background: #fff;border-radius: 1rem;}
 .side-ad.left-side {left: 100px;}
 .side-ad.right-side {right: 100px;}

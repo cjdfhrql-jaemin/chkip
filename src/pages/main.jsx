@@ -38,6 +38,19 @@ export const Main = ({ data }) => {
 					<a href="/article/2">Details</a>
   				</article>
 			</div>
+
+			<div class="content-ad">
+			<ins class="adsbygoogle"
+				style="display:block"
+				data-ad-client="ca-pub-1216027646063680"
+				data-ad-slot="4706270064"
+				data-ad-format="auto"
+				data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			</div>
+
 			<div class="content">
 				<h2>Serverless Architecture</h2>
 				<p>${data.translated.desc1_1}&nbsp;${data.translated.desc1_2}</p>
